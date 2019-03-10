@@ -17,7 +17,7 @@ Chat application server same Zalo, Messenger built by Spring MVC
 
 - Backend community with frontend via API and deserialize JSON
 - Used JWT to authenticate for API
-- Buit project base on Maven
+- Built project base on Maven
 - MySQL for database (upgrade to redis later)
 - Deploying with Docker (maybe)
 
