@@ -19,6 +19,7 @@ Chat application server same Zalo, Messenger built by Spring MVC
 - Used JWT to authenticate for API
 - Buit project depen on Maven
 - MySQL for database (upgrade to redis later)
+- Deploying with Docker (maybe)
 
 ## Techniques used
 
@@ -27,12 +28,12 @@ Chat application server same Zalo, Messenger built by Spring MVC
 - [MySQL](https://www.mysql.com/): is an open source relational database management system (RDBMS).
 - [Apache Maven](https://maven.apache.org/): is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 
-## Tools and 
+## Tools and Environments
 
 - IDE: IntelliJ IDEA
 - Note: Markdowns
 
-## Repo for gui
+## Repo for Gui
 
 - Chat app React JS: https://github.com/mtsinichi/chat-app-reactjs
 - Chat app React Native: https://github.com/ZelTarz/Chat-App-RN
