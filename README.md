@@ -17,14 +17,17 @@ Chat application server same Zalo, Messenger built by Spring MVC
 
 - Backend community with frontend via API and deserialize JSON
 - Used JWT to authenticate for API
+- Buit project depen on Maven
+- MySQL for database (upgrade to redis later)
 
 ## Techniques used
 
 - [Spring MVC](https://spring.io/): is the original web framework from Spring built on the Servlet API. It provides Model-View-Controller architecture that can be used to develop flexible web applications.
 - [Hibernate ORM](http://hibernate.org/orm/): is an object-relational mapping tool for the Java programming language. It provides a framework for mapping an object-oriented domain model to a relational database.
 - [MySQL](https://www.mysql.com/): is an open source relational database management system (RDBMS).
+- [Apache Maven](https://maven.apache.org/): is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 
-## Tools
+## Tools and 
 
 - IDE: IntelliJ IDEA
 - Note: Markdowns
