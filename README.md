@@ -33,7 +33,7 @@ Chat application server same Zalo, Messenger built by Spring MVC
 - IDE: IntelliJ IDEA Ultimate
 - Note: Markdowns
 - Maven: version 3.x
-- Tommcat: version apache-tomcat-9.0.16
+- Tomcat: version apache-tomcat-9.0.16
 
 ## Repo for Gui
 
