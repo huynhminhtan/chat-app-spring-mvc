@@ -1,21 +1,12 @@
-package stdio.entities;
+package main.java.entities;
 
+//import stdio.utilities.StdioHelper;
+
+import javax.persistence.*;
 import java.lang.reflect.Field;
 import java.util.Date;
 import java.util.Map;
 import java.util.Set;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
-import stdio.utilities.StdioHelper;
 
 @Entity
 @Table(name="Orders")
@@ -153,27 +144,27 @@ public class Order {
 	
 	public Boolean update(Map<String, Object> map) {
 
-		Order srcObj = StdioHelper.getObjectFromMap(map, Order.class);
-		if (srcObj == null)
-			return false;
-		
-		Field field;
-
-		for (String key: map.keySet()) {
-			try {
-				field = Order.class.getDeclaredField(key);
-				if (field.getName().equals("id") == false && 
-					field.getName().equals("createdDate") == false) {
-					boolean accessible = field.isAccessible();			
-					field.setAccessible(true);
-					field.set(this, field.get(srcObj));
-					field.setAccessible(accessible);
-				}	
-			} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
-				e.printStackTrace();
-				return false;
-			}
-		}
+//		Order srcObj = StdioHelper.getObjectFromMap(map, Order.class);
+//		if (srcObj == null)
+//			return false;
+//
+//		Field field;
+//
+//		for (String key: map.keySet()) {
+//			try {
+//				field = Order.class.getDeclaredField(key);
+//				if (field.getName().equals("id") == false &&
+//					field.getName().equals("createdDate") == false) {
+//					boolean accessible = field.isAccessible();
+//					field.setAccessible(true);
+//					field.set(this, field.get(srcObj));
+//					field.setAccessible(accessible);
+//				}
+//			} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+//				e.printStackTrace();
+//				return false;
+//			}
+//		}
 		return true;
 	}
 }

@@ -1,9 +1,8 @@
-package stdio.configs;
+package main.java.configs;
 
 import org.hibernate.boot.model.naming.Identifier;
-import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
-
 import org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl;
+import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
 
 public class PhysicalNamingStrategyImpl extends PhysicalNamingStrategyStandardImpl {
 	

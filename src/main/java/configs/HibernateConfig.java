@@ -1,7 +1,5 @@
-package stdio.configs;
-import java.io.IOException;
-import java.util.Properties;
-import javax.sql.DataSource;
+package main.java.configs;
+
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AvailableSettings;
@@ -15,10 +13,16 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.util.Properties;
+
 @Configuration 
 @EnableTransactionManagement
- @PropertySource("classpath:development.properties")
+
+@PropertySource("classpath:development.properties")
 //@PropertySource("classpath:production.properties")
+
 public class HibernateConfig {
 
 	@Autowired
@@ -33,7 +37,7 @@ public class HibernateConfig {
 	public SessionFactory sessionFactory() {
 	  LocalSessionFactoryBean sFactory = new LocalSessionFactoryBean();
 	  sFactory.setDataSource(getDataSource());
-	  sFactory.setPackagesToScan("stdio.entities");
+	  sFactory.setPackagesToScan("main.java.entities");
 	  sFactory.setHibernateProperties(hibernateProperties());
 	  sFactory.setPhysicalNamingStrategy(new PhysicalNamingStrategyImpl());
 	  

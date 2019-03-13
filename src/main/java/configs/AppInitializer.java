@@ -10,7 +10,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class[] {
 								RootConfig.class,
-//								HibernateConfig.class,
+								HibernateConfig.class,
 //								SecurityConfig.class
 							};
 	}
